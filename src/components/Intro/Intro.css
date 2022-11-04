@@ -25,3 +25,18 @@
     width: 6rem;
     margin: 6px 0;
 }
+
+.i-connect {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 3.5rem 0;
+}
+
+.i-connect>:nth-child(1) {
+    padding: 15px;
+}
+
+.i-connect>:nth-child(2) {
+    padding: 5px;
+}
