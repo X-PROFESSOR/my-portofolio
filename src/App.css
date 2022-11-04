@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Gumela;
+  src: url("./fonts/Gumela_Regular.otf");
+}
+
+* {
+  font-family: 'Gumela';
+  background-color: var(--dgray);
+  color: rgb(255 255 255);
+  ;
+}
+
+.App {
+  margin: 0 3.5rem 0;
+}
+
+:root {
+  --yellow: #F5C32C;
+  --orange: #FCA61F;
+  --black: #242D49;
+  --gray: #788097;
+  --dgray: rgb(17 24 39);
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --teal: rgb(45 212 191);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 50px;
+  background-color: var(--orange);
+  border: none;
+  padding: 5px;
+  /* height: 5px;
+  width: 5px; */
+}
+
+button:hover {
+  background-color: rgb(241, 241, 202);
+  color: black;
+  cursor: pointer;
+}

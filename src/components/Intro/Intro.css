@@ -1,0 +1,27 @@
+.intro {
+    margin: 7rem 0 1rem;
+}
+
+.i-name {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+.name2 {
+    margin-top: 0.8rem;
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.i-info {
+    font-size: 0.85rem;
+    margin: 1rem 0 2rem;
+    color: rgb(146, 146, 146);
+}
+
+.i-btn {
+    width: 6rem;
+    margin: 6px 0;
+}

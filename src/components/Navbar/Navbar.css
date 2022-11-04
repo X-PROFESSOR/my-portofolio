@@ -1,0 +1,26 @@
+.n-wrapper {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.n-left {
+    display: flex;
+    justify-content: left;
+    flex: 1;
+}
+
+.n-right {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+}
+
+.n-wrapper ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
