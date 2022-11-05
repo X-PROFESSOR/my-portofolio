@@ -1,0 +1,211 @@
+:root {
+    --bgColor: rgba(255, 255, 255, 0.048);
+    --bgColorText: rgb(255 255 255 / 0%);
+}
+
+/* Skill Bars */
+.card-head {
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: var(--bgColorText);
+}
+
+.s-bars {
+    padding: 25px 30px;
+    width: 20rem;
+    background-color: var(--bgColor);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.s-bars .bar {
+    margin: 20px 0;
+}
+
+.s-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.s-bars .bar .info {
+    padding-bottom: 5px;
+    background-color: var(--bgColor);
+}
+
+.s-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+    background-color: var(--bgColorText);
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.s-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #F5C32C;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.HTML span {
+    width: 95%;
+}
+
+.bar .progress-line.CSS span {
+    width: 80%;
+}
+
+.bar .progress-line.Javascript span {
+    width: 80%;
+}
+
+.bar .progress-line.React span {
+    width: 70%;
+}
+
+.bar .progress-line.PHP span {
+    width: 70%;
+}
+
+.bar .progress-line.NodeJS span {
+    width: 80%;
+}
+
+.bar .progress-line.Firebase span {
+    width: 60%;
+}
+
+.bar .progress-line.Python span {
+    width: 50%;
+}
+
+.bar .progress-line.Figma span {
+    width: 60%;
+}
+
+.bar .progress-line.Sketch span {
+    width: 50%;
+}
+
+.bar .progress-line.Blender span {
+    width: 75%;
+}
+
+.bar .progress-line.GIMP span {
+    width: 80%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.HTML span::after {
+    content: "95%";
+}
+
+.progress-line.CSS span::after {
+    content: "80%";
+}
+
+.progress-line.Javascript span::after {
+    content: "80%";
+}
+
+.progress-line.React span::after {
+    content: "70%";
+}
+
+.progress-line.PHP span::after {
+    content: "70%";
+}
+
+.progress-line.NodeJS span::after {
+    content: "80%";
+}
+
+.progress-line.Firebase span::after {
+    content: "60%";
+}
+
+.progress-line.Python span::after {
+    content: "50%";
+}
+
+.progress-line.Figma span::after {
+    content: "60%";
+}
+
+.progress-line.Sketch span::after {
+    content: "50%";
+}
+
+.progress-line.Blender span::after {
+    content: "75%";
+}
+
+.progress-line.GIMP span::after {
+    content: "80%";
+}
+/* END */
+
+@media (max-width:481px) {
+    .s-bars {
+        width: 21rem;
+    }
+}

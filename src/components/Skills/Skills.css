@@ -1,17 +1,13 @@
-:root {
-    --bgColor: rgba(255, 255, 255, 0.048);
-}
-
 .skills {
     display: flex;
     margin: 14.5rem 3rem 0;
+    height: 30rem;
 }
 
-.s-left {
+.s-info {
+    display: flex;
     position: relative;
-}
-
-.s-right {
+    flex-direction: column;
 }
 
 .s-head {
@@ -30,150 +26,43 @@
     color: rgb(146, 146, 146);
 }
 
-/* Skill Bars */
-.s-bars {
-    padding: 25px 30px;
-    width: 20rem;
-    background: var(--bgColor);
-    border-radius: 10px;
-    position: absolute;
-}
-
-.s-bars .bar {
-    margin: 20px 0;
-}
-
-.s-bars .bar:first-child {
-    margin-top: 0px;
-}
-
-.s-bars .bar .info {
-    padding-bottom: 5px;
-    background-color: var(--bgColor);
-}
-
-.s-bars .bar .info span {
-    font-weight: 500;
-    font-size: 17px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-    background-color: var(--bgColor);
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-}
-
-.s-bars .bar .progress-line {
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
+.s-card {
     position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.bar .progress-line span {
-    height: 100%;
+.s-card>* {
     position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: #F5C32C;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-.bar .progress-line.html span {
-    width: 90%;
+.s-card>.card1 {
+    left: 22rem;
+    top: -5rem;
 }
 
-.bar .progress-line.css span {
-    width: 60%;
+.s-card>.card2 {
+    left: -6rem;
+    top: 12rem;
 }
 
-.bar .progress-line.jquery span {
-    width: 85%;
+.s-card>.card3 {
+    left: 20rem;
+    top: 21rem;
 }
-
-.bar .progress-line.python span {
-    width: 50%;
-}
-
-.bar .progress-line.mysql span {
-    width: 75%;
-}
-
-.progress-line span::before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-
-.progress-line span::after {
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-weight: 500;
-    background: #000;
-    color: #fff;
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-
-@keyframes showText2 {
-    100% {
-        opacity: 1;
-    }
-}
-
-.progress-line.html span::after {
-    content: "90%";
-}
-
-.progress-line.css span::after {
-    content: "60%";
-}
-
-.progress-line.jquery span::after {
-    content: "85%";
-}
-
-.progress-line.python span::after {
-    content: "50%";
-}
-
-.progress-line.mysql span::after {
-    content: "75%";
-}
-
-/* END */
 
 
 @media (max-width:481px) {
     .skills {
         display: block;
         margin: 18.5rem 0 5rem;
+    }
+
+    .s-card {
+        display: flex;
+        flex-direction: column;
+        gap: 21.2rem;
+    }
+
+    .s-card>* {
+        position: static;
     }
 }
