@@ -7,11 +7,18 @@
   font-family: 'Gumela';
   background-color: var(--dgray);
   color: rgb(255 255 255);
-  ;
+  padding: 0;
+  margin: 0;
 }
 
 .App {
   margin: 0 3.5rem 0;
+}
+
+@media (max-width:481px) {
+  .App {
+    margin: 0 1rem 0;
+  }
 }
 
 :root {
@@ -40,14 +47,14 @@ a {
 button {
   border-radius: 50px;
   background-color: var(--orange);
-  border: none;
+  border: 2px solid var(--orange);
   padding: 5px;
-  /* height: 5px;
-  width: 5px; */
+  text-shadow: #6c4911 0px 0px 10px;
 }
 
 button:hover {
   background-color: rgb(241, 241, 202);
   color: black;
   cursor: pointer;
+  text-shadow: none
 }

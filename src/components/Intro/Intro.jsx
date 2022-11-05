@@ -9,8 +9,8 @@ function Intro() {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span className="name1">Hi, I'm</span>
-          <span className="name2">Nilesh Mukherjee</span>
+          <p className="name1">Hi, I'm</p>
+          <p className="name2">Nilesh Mukherjee</p>
           <p className="i-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iste reprehenderit eum iusto, expedita mollitia minima possimus aliquam nihil qui, quis sunt facere corrupti fugiat tempora consequatur rerum odit error.</p>
           <button className='i-btn'>Download CV</button>
         </div>
@@ -25,6 +25,9 @@ function Intro() {
             <img src={telegram} alt="" height={70} width={70} />
           </a>
         </div>
+      </div>
+      <div className="i-right">
+        its right
       </div>
     </div>
   )

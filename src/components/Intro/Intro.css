@@ -1,12 +1,10 @@
 .intro {
     margin: 7rem 0 1rem;
+    display: flex;
 }
 
 .i-name {
     font-size: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    width: 40rem;
 }
 
 .name2 {
@@ -39,4 +37,26 @@
 
 .i-connect>:nth-child(2) {
     padding: 5px;
+}
+
+.i-left {
+    flex: 1;
+}
+
+.i-right {
+    flex: 1;
+}
+
+@media (max-width:481px) {
+    .intro {
+        display: block;
+    }
+    
+    .i-name {
+        font-size: 2.5rem;
+    }
+
+    .i-info {
+        font-size: 0.65rem;
+    }
 }

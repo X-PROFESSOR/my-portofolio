@@ -1,7 +1,6 @@
-.n-wrapper {
+.navbar {
     height: 8vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
     font-size: 1.2rem;
@@ -11,16 +10,30 @@
     display: flex;
     justify-content: left;
     flex: 1;
+    font-weight: bold;
 }
 
 .n-right {
     display: flex;
     justify-content: right;
     flex: 1;
+    gap: 1.5rem;
 }
 
-.n-wrapper ul {
+.navbar ul {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+}
+
+@media (max-width:715px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media (max-width:481px) {
+    .navbar {
+        margin: 0;
+    }
 }
