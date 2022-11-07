@@ -4,7 +4,7 @@ import github from '../../img/github.png'
 import linkedin from '../../img/linkedin.png'
 import telegram from '../../img/telegram.png'
 
-function Intro() {
+const Intro = () => {
   return (
     <div className="intro">
       <div className="i-left">

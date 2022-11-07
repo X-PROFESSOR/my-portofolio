@@ -1,14 +1,14 @@
 import React from 'react'
 import './Skills.css'
-import Card from '../Cards/Cards'
+import Card from '../S-Cards/S-Cards'
 
-function Skills() {
+const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills" id='Skills'>
       <div className="s-info">
         <div className="s-head">
-          <p className="head1">My</p>
-          <p className="head2">SkillSet</p>
+          <p>My</p>
+          <p style={{color: "#F5C32C", marginTop: "0.5rem"}}>SkillSet</p>
         </div>
         <p className="s-body">Lorem ispum is simpley dummy text of printing of printing Lorem<br></br>
           ispum is simpley dummy text of printing</p>

@@ -1,23 +1,13 @@
 .skills {
     display: flex;
-    margin: 14.5rem 3rem 0;
-    height: 30rem;
-}
-
-.s-info {
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    padding: 12rem 3rem 0;
+    height: 36rem;
+    margin: 0 3.5rem 0;
 }
 
 .s-head {
     font-size: 2.5rem;
     font-weight: bold;
-}
-
-.head2 {
-    margin-top: 0.5rem;
-    color: var(--yellow);
 }
 
 .s-body {
@@ -35,28 +25,35 @@
 }
 
 .s-card>.card1 {
-    left: 22rem;
-    top: -5rem;
+    left: 26rem;
+    top: -6rem;
 }
 
 .s-card>.card2 {
-    left: -6rem;
-    top: 12rem;
+    left: 1.4rem;
+    top: 6rem;
 }
 
 .s-card>.card3 {
-    left: 20rem;
-    top: 21rem;
+    left: 24rem;
+    top: 15.5rem;
 }
 
 
 @media (max-width:481px) {
     .skills {
         display: block;
-        margin: 18.5rem 0 5rem;
+        padding: 18.5rem 0 5rem;
+        height: 72rem;
+        margin: 0;
+    }
+
+    .s-info {
+        margin: 0 1.4rem 0;
     }
 
     .s-card {
+        margin: 0 1.4rem 0;
         display: flex;
         flex-direction: column;
         gap: 21.2rem;

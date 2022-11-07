@@ -11,16 +11,6 @@
   margin: 0;
 }
 
-.App {
-  margin: 0 3.5rem 0;
-}
-
-@media (max-width:481px) {
-  .App {
-    margin: 0 1rem 0;
-  }
-}
-
 :root {
   --yellow: #F5C32C;
   --orange: #FCA61F;

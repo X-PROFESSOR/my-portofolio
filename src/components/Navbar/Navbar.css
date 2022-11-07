@@ -2,8 +2,9 @@
     height: 8vh;
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    padding: 1rem 0;
     font-size: 1.2rem;
+    margin: 0 3.5rem 0;
 }
 
 .n-left {
@@ -26,6 +27,10 @@
     align-items: center;
 }
 
+.navbar ul li {
+    cursor: pointer;
+}
+
 @media (max-width:715px) {
     .navbar ul {
         display: none;
@@ -34,6 +39,7 @@
 
 @media (max-width:481px) {
     .navbar {
-        margin: 0;
+        padding: 0;
+        margin: 0 1.4rem 0;
     }
 }

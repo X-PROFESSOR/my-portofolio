@@ -12,10 +12,11 @@
 
 .s-bars {
     padding: 25px 30px;
-    width: 20rem;
+    width: 17rem;
     background-color: var(--bgColor);
     border-radius: 10px;
     position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .s-bars .bar {
@@ -47,9 +48,9 @@
 
 .s-bars .bar .progress-line {
     height: 10px;
-    width: 100%;
+    /* width: 100%; */
     background: #f0f0f0;
-    position: relative;
+    /* position: relative; */
     transform: scaleX(0);
     transform-origin: left;
     border-radius: 10px;
@@ -81,11 +82,11 @@
 }
 
 .bar .progress-line.Javascript span {
-    width: 80%;
+    width: 70%;
 }
 
 .bar .progress-line.React span {
-    width: 70%;
+    width: 60%;
 }
 
 .bar .progress-line.PHP span {
@@ -113,11 +114,11 @@
 }
 
 .bar .progress-line.Blender span {
-    width: 75%;
+    width: 45%;
 }
 
 .bar .progress-line.GIMP span {
-    width: 80%;
+    width: 75%;
 }
 
 .progress-line span::before {
@@ -125,10 +126,7 @@
     content: "";
     top: -10px;
     right: 0;
-    height: 0;
-    width: 0;
     border: 7px solid transparent;
-    border-bottom-width: 0px;
     border-right-width: 0px;
     border-top-color: #000;
     opacity: 0;
@@ -137,14 +135,12 @@
 
 .progress-line span::after {
     position: absolute;
-    top: -28px;
+    top: -30px;
     right: 0;
-    font-weight: 500;
     background: #000;
-    color: #fff;
-    padding: 1px 8px;
+    padding: 2px 5px;
     font-size: 12px;
-    border-radius: 3px;
+    border-radius: 4px;
     opacity: 0;
     animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -164,11 +160,11 @@
 }
 
 .progress-line.Javascript span::after {
-    content: "80%";
+    content: "70%";
 }
 
 .progress-line.React span::after {
-    content: "70%";
+    content: "60%";
 }
 
 .progress-line.PHP span::after {
@@ -196,16 +192,16 @@
 }
 
 .progress-line.Blender span::after {
-    content: "75%";
+    content: "45%";
 }
 
 .progress-line.GIMP span::after {
-    content: "80%";
+    content: "75%";
 }
 /* END */
 
 @media (max-width:481px) {
-    .s-bars {
+    /* .s-bars {
         width: 21rem;
-    }
+    } */
 }

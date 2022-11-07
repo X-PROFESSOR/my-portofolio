@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cards.css'
+import './S-Cards.css'
 
 const Cards = ({header, l1, l2, l3, l4}) => {
     return (

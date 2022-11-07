@@ -1,5 +1,5 @@
 .intro {
-    margin: 7rem 0 1rem;
+    margin: 7rem 3.5rem 1rem;
     display: flex;
 }
 
@@ -50,6 +50,7 @@
 @media (max-width:481px) {
     .intro {
         display: block;
+        margin: 7rem 1.4rem 1rem;
     }
     
     .i-name {
