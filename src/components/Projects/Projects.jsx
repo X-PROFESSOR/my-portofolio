@@ -1,36 +1,28 @@
 import React from 'react'
 import './Projects.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from "swiper";
 import 'swiper/css'
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
-
-// let slide = document.querySelectorAll(".swiper-slide")
-// if (slide.classList.contains("swiper-slide-active")) {
-//   console.log("hi");
-// }
 
 const params = {
   navigation: true,
   modules: [Navigation],
   grabCursor: true,
-  className: 'projects-slider',
+  slidesPerView: 3,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 0,
+    840: {
+      slidesPerView: 2,
     },
-    // when window width is >= 640px
-    640: {
+    1280: {
       slidesPerView: 3,
-      spaceBetween: 0,
-    }
+    },
+    1920: {
+      slidesPerView: 4,
+    },
   }
 }
 
@@ -46,33 +38,45 @@ const Projects = () => {
         <Swiper {...params}>
           <SwiperSlide>
             <div className="p-cards">
-              <p className="cardName">Exam Management System</p>
+              <p className="cardName">Portfolio Project</p>
               <p className="cardDetails">
-                Online Exam Management System Using HTML, CSS, Javascript</p>
+                My Portfolio written in ReactJS</p>
+              <a href='https://github.com/X-PROFESSOR/my-portofolio' target='_blank' rel="noreferrer">
+                <button className="viewProject">View Project</button>
+              </a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="p-cards">
+              <p className="cardName">Online Exam<br></br>Management System</p>
+              <p className="cardDetails">
+                OEMS Using HTML, CSS, Javascript</p>
+              <a href='https://github.com/X-PROFESSOR/Exam-Management-System' target='_blank' rel="noreferrer">
+                <button className="viewProject">View Project</button>
+              </a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="p-cards">
+              <p className="cardName">Lorem ipsum</p>
+              <p className="cardDetails">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className="viewProject">View Project</button>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="p-cards">
-              <p className="cardName">fkjfrykftyk</p>
+              <p className="cardName">Lorem ipsum</p>
               <p className="cardDetails">
-                Online Exam Management System Using HTML, CSS, Javascript</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className="viewProject">View Project</button>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="p-cards">
-              <p className="cardName">drt5kmrt5k</p>
+              <p className="cardName">Lorem ipsum</p>
               <p className="cardDetails">
-                Online Exam Management System Using HTML, CSS, Javascript</p>
-              <button className="viewProject">View Project</button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">dtr5y7kt5dekt</p>
-              <p className="cardDetails">
-                Online Exam Management System Using HTML, CSS, Javascript</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className="viewProject">View Project</button>
             </div>
           </SwiperSlide>
@@ -81,10 +85,5 @@ const Projects = () => {
     </div>
   )
 }
-
-  // if (document.body.classList.contains('swiper-slide-active')) {
-  //   this.classList.add('ml-3')
-  // }
-
 
 export default Projects

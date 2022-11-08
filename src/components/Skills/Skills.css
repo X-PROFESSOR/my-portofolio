@@ -1,7 +1,7 @@
 .skills {
     display: flex;
-    padding: 12rem 3rem 0;
-    height: 36rem;
+    padding: 2rem 2rem 0;
+    height: 45rem;
     margin: 0 3.5rem 0;
 }
 
@@ -16,8 +16,14 @@
     color: rgb(146, 146, 146);
 }
 
+.s-info {
+    flex: 1;
+    padding-top: 5rem;
+}
+
 .s-card {
     position: relative;
+    flex: 2;
 }
 
 .s-card>* {
@@ -25,27 +31,27 @@
 }
 
 .s-card>.card1 {
-    left: 26rem;
-    top: -6rem;
+    left: 56%;
+    top: 0rem;
 }
 
 .s-card>.card2 {
-    left: 1.4rem;
-    top: 6rem;
+    right: 53%;
+    top: 25%;
 }
 
 .s-card>.card3 {
-    left: 24rem;
-    top: 15.5rem;
+    left: 52%;
+    top: 49%;
 }
 
 
 @media (max-width:481px) {
     .skills {
         display: block;
-        padding: 18.5rem 0 5rem;
-        height: 72rem;
-        margin: 0;
+        padding: 0;
+        height: 82rem;
+        margin: 18.5rem 0 0rem;
     }
 
     .s-info {
@@ -56,10 +62,13 @@
         margin: 0 1.4rem 0;
         display: flex;
         flex-direction: column;
-        gap: 21.2rem;
+        align-items: center;
+        gap: 2rem;
+        height: 85%;
     }
 
     .s-card>* {
-        position: static;
+        position: initial;
+        width: 100%;
     }
 }
