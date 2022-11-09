@@ -10,7 +10,7 @@ const Skills = () => {
           <p>My</p>
           <p style={{color: "#F5C32C", marginTop: "0.5rem"}}>SkillSet</p>
         </div>
-        <p className="s-body">Lorem ispum is simpley dummy text of printing of printing Lorem<br></br>
+        <p className="s-body">Lorem ispum is simpley dummy text of printing of printing<br></br>Lorem
           ispum is simpley dummy text of printing</p>
       </div>
       <div className="s-card">

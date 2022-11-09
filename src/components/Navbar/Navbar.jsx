@@ -11,17 +11,16 @@ const Navbar = () => {
           <Link spy={true} to='Navbar' smooth={true} activeClass="activeClass">
             <li>Home</li>
           </Link>
-          <Link spy={true} to='Skills' smooth={true} activeClass="activeClass">
+          <Link spy={true} to='Skills' smooth={true}>
             <li>Skills</li>
           </Link>
-          <Link spy={true} to='Projects' smooth={true} activeClass="activeClass">
+          <Link spy={true} to='Projects' smooth={true}>
             <li>Projects</li>
           </Link>
-          <Link spy={true} to='About' smooth={true} activeClass="activeClass">
-            <li>About</li>
-          </Link>
         </ul>
-        <button>Contact Me</button>
+        <Link spy={true} to='Contact' smooth={true}>
+          <button>Contact Me</button>
+        </Link>
       </div>
 
     </div>

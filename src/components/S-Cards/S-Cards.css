@@ -15,7 +15,6 @@
     width: 17rem;
     background-color: var(--bgColor);
     border-radius: 10px;
-    /* position: absolute; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -198,6 +197,7 @@
 .progress-line.GIMP span::after {
     content: "75%";
 }
+
 /* END */
 
 @media (max-width:481px) {

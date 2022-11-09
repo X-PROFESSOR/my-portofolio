@@ -1,35 +1,33 @@
 .projects {
-    height: 35rem;
+    height: 32rem;
+    padding: 2rem 0 0;
 }
 
 .p-head {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
-    margin: 5rem 3.5rem 2rem;
+    margin: 3rem 3.5rem 3rem;
 }
 
 .p-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 24rem; */
     width: 80%;
     height: 14rem;
     background-color: #b3a70428;
-    /* border: 2px solid #b3a70428; */
     border-radius: 19px;
     gap: 2rem;
 }
 
 .p-cards>.cardName {
-    text-align: center;
-    background-color: #b3a70400;
     font-size: 28px;
     font-weight: bold;
 }
 
-.p-cards>.cardDetails {
+.p-cards>.cardDetails,
+.p-cards>.cardName {
     text-align: center;
     background-color: #b3a70400;
 }
@@ -54,10 +52,14 @@
 
 @media (max-width:481px) {
     .projects {
-        margin-top: 5rem;
+        margin-top: 12rem;
     }
 
     .p-cards {
         height: 16rem;
+    }
+
+    .p-head {
+        margin-bottom: 5rem;
     }
 }

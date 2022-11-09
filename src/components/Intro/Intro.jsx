@@ -16,18 +16,18 @@ const Intro = () => {
         </div>
         <div className="i-connect">
           <a href='https://github.com/X-PROFESSOR/' target="_blank" rel="noreferrer">
-            <img src={github} alt="" height={40} width={40} />
+            <img src={github} alt="github" height={40} width={40} />
           </a>
           <a href='https://www.linkedin.com/in/nilesh-mukherjee-182a051bb/' target="_blank" rel="noreferrer">
-            <img src={linkedin} alt="" height={60} width={60} />
+            <img src={linkedin} alt="linkedin" height={60} width={60} />
           </a>
           <a href='https://t.me/itsprofessorhere' target="_blank" rel="noreferrer">
-            <img src={telegram} alt="" height={70} width={70} />
+            <img src={telegram} alt="telegram" height={70} width={70} />
           </a>
         </div>
       </div>
       <div className="i-right">
-        its right
+        {/* right goes here */}
       </div>
     </div>
   )
