@@ -1,19 +1,12 @@
-:root {
-    --bgColor: rgba(255, 255, 255, 0.048);
-    --bgColorText: rgb(255 255 255 / 0%);
-}
-
 /* Skill Bars */
 .card-head {
     text-align: center;
     font-size: 1.4rem;
-    background-color: var(--bgColorText);
 }
 
 .s-bars {
     padding: 25px 30px;
     width: 17rem;
-    background-color: var(--bgColor);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -28,7 +21,6 @@
 
 .s-bars .bar .info {
     padding-bottom: 5px;
-    background-color: var(--bgColor);
 }
 
 .s-bars .bar .info span {
@@ -36,7 +28,6 @@
     font-size: 17px;
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
-    background-color: var(--bgColorText);
 }
 
 @keyframes showText {
@@ -47,9 +38,7 @@
 
 .s-bars .bar .progress-line {
     height: 10px;
-    /* width: 100%; */
     background: #f0f0f0;
-    /* position: relative; */
     transform: scaleX(0);
     transform-origin: left;
     border-radius: 10px;

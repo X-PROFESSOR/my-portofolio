@@ -16,7 +16,7 @@
     justify-content: center;
     width: 80%;
     height: 14rem;
-    background-color: #b3a70428;
+    background-color: var(--ddgray);
     border-radius: 19px;
     gap: 2rem;
 }

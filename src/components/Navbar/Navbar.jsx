@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="n-left">PORTFOLIO</div>
       <div className="n-right">
         <ul>
-          <Link spy={true} to='Navbar' smooth={true} activeClass="activeClass">
+          <Link spy={true} to='Intro' smooth={true} activeClass="activeClass">
             <li>Home</li>
           </Link>
           <Link spy={true} to='Skills' smooth={true}>

@@ -21,17 +21,19 @@
     text-shadow: #aa871e 0px 0px 60px
 }
 
-.f-content,
-.f-content * {
-    background-color: var(--yellow);
-}
-
 .f-icons {
     display: flex;
     align-items: center;
     margin: 1.2rem;
     gap: 1.2rem;
 }
+
+.f-github, .f-telegram {
+    height: 45px;
+    width: 45px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 50%;
+} 
 
 @media (max-width:481px) {
     .f-content {

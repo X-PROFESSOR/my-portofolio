@@ -27,6 +27,7 @@
 }
 
 .c-user {
+    background-color: transparent;
     border: 2px solid var(--orange);
     border-radius: 5px;
     font-size: 16px;

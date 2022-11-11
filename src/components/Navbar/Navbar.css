@@ -1,10 +1,15 @@
 .navbar {
-    height: 8vh;
+    height: 25px;
+    width: 100%;
     display: flex;
+    position: fixed;
+    top: 0px;
     align-items: center;
     padding: 1rem 0;
     font-size: 1.2rem;
-    margin: 0 3.5rem 0;
+    background-color: var(--ddgray);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    z-index: 1000;
 }
 
 .n-left {
@@ -12,18 +17,20 @@
     justify-content: left;
     flex: 1;
     font-weight: bold;
+    margin-left: 3.5rem;
 }
 
 .n-right {
     display: flex;
     justify-content: right;
     flex: 1;
-    gap: 1.5rem;
+    gap: 3rem;
+    margin-right: 3.5rem;
 }
 
 .navbar ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: center;
 }
 
