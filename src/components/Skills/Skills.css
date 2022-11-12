@@ -29,7 +29,7 @@
 .s-card>* {
     position: absolute;
     /* background-color: rgba(255, 255, 255, 0.048); */
-    background-color: var(--ddgray);
+    background-color: var(--dgray);
     border-radius: 10px;
     
 }
@@ -48,7 +48,6 @@
     left: 52%;
     top: 49%;
 }
-
 
 @media (max-width:481px) {
     .skills {
@@ -72,7 +71,7 @@
     }
 
     .s-card>* {
-        position: initial;
+        position: static;
         width: 100%;
     }
 }

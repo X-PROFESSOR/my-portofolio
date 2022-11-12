@@ -1,0 +1,29 @@
+.p-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 14rem;
+    background-color: var(--dgray);
+    border-radius: 19px;
+    gap: 2rem;
+}
+
+.cardName {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cardDetails,
+.cardName {
+    text-align: center;
+    background-color: #b3a70400;
+}
+
+.p-cards button {
+    margin: 0 auto;
+}
+
+.p-cards a {
+    display: contents;
+}

@@ -1,13 +1,16 @@
 import React from 'react'
 import './Projects.css'
+import P_Cards from '../P_Cards/P_Cards';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from "swiper";
+import { Pagination } from "swiper";
 import 'swiper/css'
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const params = {
-  navigation: true,
-  modules: [Navigation],
+  pagination: {
+    dynamicBullets: true,
+  },
+  modules: [Pagination],
   grabCursor: true,
   slidesPerView: 3,
   breakpoints: {
@@ -34,51 +37,42 @@ const Projects = () => {
         <p style={{ color: "#F5C32C", marginTop: "0.5rem" }}>Projects</p>
       </div>
 
-      <div className="cards">
+      <div className='cards'>
         <Swiper {...params}>
           <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">Portfolio Project</p>
-              <p className="cardDetails">
-                My Portfolio written in ReactJS</p>
-              <a href='https://github.com/X-PROFESSOR/my-portofolio' target='_blank' rel="noreferrer">
-                <button className="viewProject">View Project</button>
-              </a>
-            </div>
+            <P_Cards
+              p_name={"Portfolio Project"}
+              p_details={"My Portfolio written in ReactJS"}
+              p_link={"https://github.com/X-PROFESSOR/my-portofolio"}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">Online Exam<br></br>Management System</p>
-              <p className="cardDetails">
-                OEMS Using HTML, CSS, Javascript</p>
-              <a href='https://github.com/X-PROFESSOR/Exam-Management-System' target='_blank' rel="noreferrer">
-                <button className="viewProject">View Project</button>
-              </a>
-            </div>
+            <P_Cards
+              p_name={"Online Exam Management System"}
+              p_details={"OEMS Using HTML, CSS, Javascript"}
+              p_link={"https://github.com/X-PROFESSOR/Exam-Management-System"}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">Lorem ipsum</p>
-              <p className="cardDetails">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button className="viewProject">View Project</button>
-            </div>
+            <P_Cards
+              p_name={"Lorem ipsum"}
+              p_details={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              p_link={"https://github.com/X-PROFESSOR/"}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">Lorem ipsum</p>
-              <p className="cardDetails">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button className="viewProject">View Project</button>
-            </div>
+            <P_Cards
+              p_name={"Lorem ipsum"}
+              p_details={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              p_link={"https://github.com/X-PROFESSOR/"}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="p-cards">
-              <p className="cardName">Lorem ipsum</p>
-              <p className="cardDetails">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button className="viewProject">View Project</button>
-            </div>
+            <P_Cards
+              p_name={"Lorem ipsum"}
+              p_details={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              p_link={"https://github.com/X-PROFESSOR/"}
+            />
           </SwiperSlide>
         </Swiper>
       </div>

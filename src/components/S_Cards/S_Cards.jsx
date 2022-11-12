@@ -1,7 +1,7 @@
 import React from 'react'
-import './S-Cards.css'
+import './S_Cards.css'
 
-const Cards = ({header, l1, l2, l3, l4}) => {
+const S_Cards = ({header, l1, l2, l3, l4}) => {
     return (
         <div className="s-bars">
             <p className="card-head">{header}</p>
@@ -41,4 +41,4 @@ const Cards = ({header, l1, l2, l3, l4}) => {
     )
 }
 
-export default Cards
+export default S_Cards

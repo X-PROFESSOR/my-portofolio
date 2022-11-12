@@ -10,7 +10,7 @@ const Intro = () => {
     <div className="intro" id='Intro'>
       <div className="i-left">
         <div className="i-name">
-          <p style={{fontSize: "1.25rem"}}>Hello, I'm</p>
+          <p style={{ fontSize: "1.25rem" }}>Hello, I'm</p>
           <p className="name2">NILESH MUKHERJEE</p>
           <p className="i-info">Developer From India</p>
           <button className='i-btn'>Download CV</button>
@@ -31,30 +31,29 @@ const Intro = () => {
         <img src={shape} alt="shape" className='i-shape' />
         <div className='i-box'>
           <div>
-            <pre>
+            <p>
               1&nbsp;&nbsp;class <b>Person</b> {'{'}
-            </pre>
-            <pre>
+            </p>
+            <p>
               2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() {'{'}
-            </pre>
-            <pre>
-              3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = ""<b>Nilesh Mukherjee</b>";
-            </pre>
-            <pre>
+            </p>
+            <p>
+              3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "<b>Nilesh Mukherjee</b>";
+            </p>
+            <p>
               4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["<b>DEV</b>", "<b>DESIGN</b>"];
-            </pre>
-            <pre>
+            </p>
+            <p>
               5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.age = new Date().getFullYear() - 2001;
-            </pre>
-            <pre>
+            </p>
+            <p>
               6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}
-            </pre>
-            <pre>
+            </p>
+            <p>
               7&nbsp;&nbsp;{'}'}
-            </pre>
+            </p>
           </div>
         </div>
-        {/* right goes here */}
       </div>
     </div>
   )

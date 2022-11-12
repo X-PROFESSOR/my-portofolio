@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import Card from '../S-Cards/S-Cards'
+import S_Cards from '../S_Cards/S_Cards'
 
 const Skills = () => {
   return (
@@ -15,7 +15,7 @@ const Skills = () => {
       </div>
       <div className="s-card">
         <div className="card1">
-          <Card
+          <S_Cards
             header={"Frontend Developer"}
             l1={"HTML"}
             l2={"CSS"}
@@ -24,7 +24,7 @@ const Skills = () => {
           />
         </div>
         <div className="card2">
-          <Card
+          <S_Cards
             header={"Backend Developer"}
             l1={"PHP"}
             l2={"NodeJS"}
@@ -33,7 +33,7 @@ const Skills = () => {
           />
         </div>
         <div className="card3">
-          <Card
+          <S_Cards
             header={"Designer"}
             l1={"Figma"}
             l2={"Sketch"}

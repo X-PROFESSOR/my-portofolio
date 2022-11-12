@@ -1,0 +1,49 @@
+.about {
+    margin: 0 0 8rem;
+    padding-top: 2.5rem;
+}
+
+.a-head {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 3.5rem;
+}
+
+.a-body {
+    display: flex;
+    transform: skewY(-3deg);
+    background-color: var(--dgray);
+    height: 22rem;
+}
+
+.a-bodyPic {
+    flex: 1;
+    transform: skewY(3deg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 5rem;
+}
+
+.picDiv {
+    height: 14rem;
+    width: 14rem;
+    background-color: var(--gray);
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.a-bodyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    transform: skewY(3deg);
+    margin: 0 5rem 0 0;
+    line-height: 25px;
+}

@@ -18,7 +18,8 @@
     width: 100%;
     font-size: 1.1rem;
     gap: 0.8rem;
-    text-shadow: #aa871e 0px 0px 60px
+    text-shadow: #aa871e 0px 0px 60px;
+    background-color: var(--yellow);
 }
 
 .f-icons {

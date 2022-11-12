@@ -11,22 +11,23 @@
 
 body {
   font-family: 'Gumela';
-  background-color: var(--dgray);
+  background-color: var(--gray);
 }
 
 :root {
   --yellow: #F5C32C;
   --orange: #FCA61F;
-  --black: #242D49;
-  --gray: #788097;
-  --dgray: rgb(17 24 39);
-  --ddgray: rgb(27 32 45);
-  --blueCard: #DDF8FE;
-  --purple: rgb(238 210 255);
-  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --orangeCard: rgba(252, 166, 31, 0.45);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-  --teal: rgb(45 212 191);
+  --dorange: #d98f1b;
+  /* --black: #242D49; */
+  /* --gray: #788097; */
+  --gray: rgb(17 24 39);
+  --dgray: rgb(27 32 45);
+  /* --blueCard: #DDF8FE; */
+  /* --purple: rgb(238 210 255); */
+  /* --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%); */
+  /* --orangeCard: rgba(252, 166, 31, 0.45); */
+  /* --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08); */
+  /* --teal: rgb(45 212 191); */
 }
 
 ul {
