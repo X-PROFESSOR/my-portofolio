@@ -17,17 +17,9 @@ body {
 :root {
   --yellow: #F5C32C;
   --orange: #FCA61F;
-  --dorange: #d98f1b;
-  /* --black: #242D49; */
-  /* --gray: #788097; */
+  --dorange: #e18e0c;
   --gray: rgb(17 24 39);
   --dgray: rgb(27 32 45);
-  /* --blueCard: #DDF8FE; */
-  /* --purple: rgb(238 210 255); */
-  /* --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%); */
-  /* --orangeCard: rgba(252, 166, 31, 0.45); */
-  /* --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08); */
-  /* --teal: rgb(45 212 191); */
 }
 
 ul {
@@ -40,16 +32,18 @@ a {
 }
 
 button {
-  border-radius: 50px;
+  border-radius: 15px;
   background-color: var(--orange);
   border: 2px solid var(--orange);
-  padding: 5px;
+  padding: 6px 0;
   text-shadow: #6c4911 0px 0px 10px;
+  transition: all 0.3s ease 0s;
+  width: 6rem
 }
 
 button:hover {
-  background-color: rgb(241, 241, 202);
-  color: black;
   cursor: pointer;
-  text-shadow: none
+  box-shadow: 0px 4px 10px 0px rgb(124 92 40 / 70%);
+  transition: all 0.2s ease 0s;
+  transform: scale(1.05);
 }

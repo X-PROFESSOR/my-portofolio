@@ -16,21 +16,21 @@ const Interests = () => {
                         <img src={game} alt="" height={30} />
                     </section>
                     <p>Games</p>
-                    <p style={{lineHeight: "25px"}}>I love to play games, either that is PVP of Storymode</p>
+                    <p>I love to play games, either that is PVP of Storymode</p>
                 </div>
                 <div className="in-card">
                     <section className="card-img">
                         <img src={js} alt="" height={35} />
                     </section>
                     <p>Javascript</p>
-                    <p style={{lineHeight: "25px"}}>I extremely love to code in Javascript, it's fun</p>
+                    <p>I extremely love to code in Javascript, it's fun</p>
                 </div>
                 <div className="in-card">
                     <section className="card-img">
                         <img src={code} alt="" height={50} />
                     </section>
                     <p>Coding</p>
-                    <p style={{lineHeight: "25px"}}>I love to code in differnt languages in free time</p>
+                    <p>I love to code in differnt languages in free time</p>
                 </div>
             </div>
         </div>

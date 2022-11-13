@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="contact" id='Contact'>
       <div className="c-text">
         <p>Have Questions?</p>
-        <p style={{ color: "#F5C32C", marginTop: "0.5rem" }}>Contact Me</p>
+        <p style={{ color: "var(--yellow)", marginTop: "0.5rem" }}>Contact Me</p>
       </div>
       <div className="c-form">
         <form>

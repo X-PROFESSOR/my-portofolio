@@ -1,5 +1,5 @@
 .about {
-    margin: 0 0 8rem;
+    margin: 5rem 0 8rem;
     padding-top: 2.5rem;
 }
 
@@ -15,17 +15,15 @@
     transform: skewY(-3deg);
     background-color: var(--dgray);
     height: 22rem;
+    padding: 0 5rem 0;
 }
 
 .a-bodyPic {
     flex: 1;
     transform: skewY(3deg);
-    justify-content: center;
-    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 5rem;
 }
 
 .picDiv {
@@ -44,6 +42,17 @@
     align-items: center;
     flex: 2;
     transform: skewY(3deg);
-    margin: 0 5rem 0 0;
     line-height: 25px;
+}
+
+@media (max-width:481px) {
+    .a-body {
+        flex-direction: column;
+        height: 35rem;
+        padding: 1rem 1.4rem 1rem;
+    }
+
+    .a-bodyInfo, .a-bodyPic {
+        flex: 1;
+    }
 }

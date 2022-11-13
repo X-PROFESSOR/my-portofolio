@@ -54,11 +54,16 @@
         display: block;
         padding: 0;
         height: 82rem;
-        margin: 18.5rem 0 0rem;
+        margin: 8rem 0 0rem;
     }
 
     .s-info {
+        text-align: center;
         margin: 0 1.4rem 0;
+    }
+
+    .s-body {
+        text-align: justify;
     }
 
     .s-card {

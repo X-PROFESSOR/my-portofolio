@@ -33,6 +33,16 @@
     border-radius: 15px;
 }
 
+.in-card>:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.in-card>:nth-child(3) {
+    line-height: 25px;
+}
+
 .card-img {
     display: flex;
     justify-content: center;

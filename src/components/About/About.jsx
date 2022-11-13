@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about" id='About'>
       <div className="a-head">
-        About Me
+        About <span style={{color: "var(--yellow)"}}>Me</span>
       </div>
       <div className="a-body">
         <div className="a-bodyPic">

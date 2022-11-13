@@ -5,7 +5,7 @@
     position: fixed;
     align-items: center;
     padding: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: var(--dgray);
     box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
     z-index: 1000;
@@ -23,13 +23,12 @@
     display: flex;
     justify-content: right;
     flex: 1;
-    gap: 2rem;
     margin-right: 3.5rem;
 }
 
 .navbar ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     align-items: center;
 }
 

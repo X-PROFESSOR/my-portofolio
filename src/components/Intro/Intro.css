@@ -4,7 +4,7 @@
     display: flex;
 }
 
-.name2 {
+.name {
     margin-top: 0.8rem;
     color: var(--yellow);
     font-weight: bolder;
@@ -16,24 +16,11 @@
     margin: 0.5rem 0 2rem;
 }
 
-.i-btn {
-    width: 6rem;
-    margin: 6px 0;
-}
-
 .i-connect {
     display: flex;
     align-items: center;
     gap: 1.2rem;
     margin: 3.5rem 0;
-}
-
-.i-connect>:nth-child(1) {
-    padding: 15px;
-}
-
-.i-connect>:nth-child(2) {
-    padding: 5px;
 }
 
 @keyframes slideFromUp {
@@ -97,12 +84,11 @@
     }
 
     .i-name {
-        font-size: 2.5rem;
         text-align: center;
     }
 
     .i-info {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .i-connect {
@@ -113,9 +99,5 @@
     .i-box {
         width: 100%;
         font-size: 0.9rem;
-    }
-
-    .i-info {
-        font-size: 0.65rem;
     }
 }
