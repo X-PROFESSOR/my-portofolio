@@ -6,12 +6,15 @@ const About = () => {
   return (
     <div className="about" id='About'>
       <div className="a-head">
-        About <span style={{color: "var(--yellow)"}}>Me</span>
+        About <span style={{ color: "var(--yellow)" }}>Me</span>
       </div>
       <div className="a-body">
         <div className="a-bodyPic">
           <section className='picDiv'>
-            <img src={me} alt="" style={{position: "absolute", width: "14rem", top: "2%" }} />
+            <svg style={{ position: "absolute", height: "14rem", width: "14rem", top: "2%" }}
+              xmlns="http://www.w3.org/2000/svg">
+              <image width={"14rem"} preserveAspectRatio = "none" href={me} />
+            </svg>
           </section>
         </div>
         <div className="a-bodyInfo">
