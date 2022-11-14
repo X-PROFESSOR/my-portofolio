@@ -1,8 +1,9 @@
 .skills {
     display: flex;
-    padding: 4.5rem 2rem 0;
+    padding: 6.5rem 2rem 6.5rem;
     height: 45rem;
-    margin: 0 3.5rem 0;
+    margin: 2rem 3.5rem 20px;
+    overflow: hidden;
 }
 
 .s-head {
@@ -18,20 +19,20 @@
 
 .s-info {
     flex: 1;
-    padding-top: 5rem;
+    margin-top: 6rem;
+    z-index: 1;
 }
 
 .s-card {
     position: relative;
     flex: 2;
+    z-index: 1;
 }
 
 .s-card>* {
     position: absolute;
-    /* background-color: rgba(255, 255, 255, 0.048); */
     background-color: var(--dgray);
     border-radius: 10px;
-    
 }
 
 .s-card>.card1 {
@@ -47,6 +48,71 @@
 .s-card>.card3 {
     left: 52%;
     top: 49%;
+}
+
+.s-innerWordCloud {
+    position: absolute;
+    width: 88%;
+    z-index: -1000;
+}
+
+.s-innerWordCloud>p {
+    position: absolute;
+    color: rgb(48, 48, 48);
+}
+
+.s-innerWordCloud>:nth-child(1) {
+    top: 0rem;
+    right: 66rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(2) {
+    top: 2rem;
+    right: 24rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(3) {
+    top: 7rem;
+    right: 42rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(4) {
+    top: 35rem;
+    right: 65rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(5) {
+    top: 5rem;
+    right: 10rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(6) {
+    top: 24rem;
+    right: 67rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(7) {
+    top: 34rem;
+    right: 27rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(8) {
+    top: 35.5rem;
+    right: 6rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(9) {
+    top: 20rem;
+    right: 54rem;
+    font-size: 20px;
 }
 
 @media (max-width:481px) {

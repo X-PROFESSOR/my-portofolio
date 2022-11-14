@@ -27,7 +27,7 @@
     font-weight: 500;
     font-size: 17px;
     opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
+    animation: var(--animateSpan)
 }
 
 @keyframes showText {
@@ -42,7 +42,7 @@
     transform: scaleX(0);
     transform-origin: left;
     border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: var(--animatePline)
 }
 
 @keyframes animate {
@@ -58,7 +58,7 @@
     transform: scaleX(0);
     transform-origin: left;
     background: #F5C32C;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: var(--animatePlineSpan)
 }
 
 .bar .progress-line.HTML span {
@@ -118,7 +118,7 @@
     border-right-width: 0px;
     border-top-color: #000;
     opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
+    animation: var(--animatePlineSpanBA);
 }
 
 .progress-line span::after {
@@ -130,7 +130,7 @@
     font-size: 12px;
     border-radius: 4px;
     opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
+    animation: var(--animatePlineSpanBA);
 }
 
 @keyframes showText2 {

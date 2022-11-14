@@ -47,3 +47,19 @@ button:hover {
   transition: all 0.2s ease 0s;
   transform: scale(1.05);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #58585863;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 2px solid #835e24;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #835e24;
+}
