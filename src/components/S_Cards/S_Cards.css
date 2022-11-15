@@ -62,7 +62,7 @@
 }
 
 .bar .progress-line.HTML span {
-    width: 95%;
+    width: 80%;
 }
 
 .bar .progress-line.CSS span {
@@ -82,7 +82,7 @@
 }
 
 .bar .progress-line.NodeJS span {
-    width: 80%;
+    width: 55%;
 }
 
 .bar .progress-line.Firebase span {
@@ -140,7 +140,7 @@
 }
 
 .progress-line.HTML span::after {
-    content: "95%";
+    content: "80%";
 }
 
 .progress-line.CSS span::after {
@@ -160,7 +160,7 @@
 }
 
 .progress-line.NodeJS span::after {
-    content: "80%";
+    content: "55%";
 }
 
 .progress-line.Firebase span::after {

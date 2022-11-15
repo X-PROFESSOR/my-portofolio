@@ -80,8 +80,8 @@
 }
 
 .s-innerWordCloud>:nth-child(4) {
-    top: 35rem;
-    right: 65rem;
+    top: 36rem;
+    right: 62rem;
     font-size: 20px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .s-innerWordCloud>:nth-child(7) {
-    top: 34rem;
+    top: 38rem;
     right: 27rem;
     font-size: 20px;
 }
@@ -110,8 +110,14 @@
 }
 
 .s-innerWordCloud>:nth-child(9) {
-    top: 20rem;
+    top: 18rem;
     right: 54rem;
+    font-size: 20px;
+}
+
+.s-innerWordCloud>:nth-child(10) {
+    top: 29rem;
+    right: 43rem;
     font-size: 20px;
 }
 
@@ -144,5 +150,9 @@
     .s-card>* {
         position: static;
         width: 100%;
+    }
+
+    .s-innerWordCloud {
+        display: none;
     }
 }

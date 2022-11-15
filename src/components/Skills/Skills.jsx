@@ -26,7 +26,7 @@ const Skills = () => {
       <ParallaxProvider>
         <Parallax speed={-30}>
           <div className="s-innerWordCloud">
-            <p>HTML5</p>
+            <p>jQuery</p>
             <p>CSS3</p>
             <p>MongoDB</p>
             <p>Figma</p>
@@ -35,6 +35,7 @@ const Skills = () => {
             <p>Blender</p>
             <p>MySQL</p>
             <p>php</p>
+            <p>HTML5</p>
           </div>
         </Parallax>
       </ParallaxProvider>

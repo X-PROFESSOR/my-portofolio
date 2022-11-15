@@ -27,7 +27,7 @@
 
 @media (max-width:481px) {
     .projects {
-        margin-top: 4rem;
+        padding: 0;
     }
 
     .p-cards {
