@@ -10,7 +10,7 @@ const Skills = () => {
         <div className="s-head">
           <p>My <span style={{ color: "#F5C32C", marginTop: "0.5rem" }}>SkillSet</span> </p>
         </div>
-        <p className="s-body">Lorem ispum is simpley dummy text of printing of printing Lorem ispum is simpley dummy text of printing</p>
+        <p className="s-body">Here are some languages and tools I tried. I mainly use Figma and GIMP for designing purposes</p>
       </div>
       <div className="s-card">
         <div className="card1">

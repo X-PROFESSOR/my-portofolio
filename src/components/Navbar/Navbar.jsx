@@ -17,10 +17,10 @@ const Navbar = () => {
           <Link spy={true} to='Skills' smooth={true}>
             <li>Skills</li>
           </Link>
-          <Link spy={true} to='Projects' smooth={true}>
+          <Link spy={true} to='Projects' offset={-50} smooth={true}>
             <li>Projects</li>
           </Link>
-          <Link spy={true} to='Contact' smooth={true}>
+          <Link spy={true} to='Contact' offset={-60} smooth={true}>
             <li>Contact</li>
           </Link>
         </ul>
