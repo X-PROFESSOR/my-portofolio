@@ -14,13 +14,13 @@ const Skills = () => {
       </div>
       <div className="s-card">
         <div className="card1">
-          <Cards header={"Frontend Developer"} l1={"HTML"} l2={"CSS"} l3={"Javascript"} l4={"React"} />
+          <Cards header={"Frontend Developer"} l1={"HTML"} w1={"80%"} l2={"CSS"} w2={"70%"} l3={"Javascript"} w3={"65%"} l4={"React"} w4={"60%"} />
         </div>
         <div className="card2">
-          <Cards header={"Backend Developer"} l1={"PHP"} l2={"NodeJS"} l3={"Firebase"} l4={"Python"} />
+          <Cards header={"Backend Developer"} l1={"PHP"} w1={"70%"} l2={"NodeJS"} w2={"55%"} l3={"Firebase"} w3={"40%"} l4={"Python"} w4={"50%"} />
         </div>
         <div className="card3">
-          <Cards header={"Designer"} l1={"Figma"} l2={"Sketch"} l3={"Blender"} l4={"GIMP"} />
+          <Cards header={"Designer"} l1={"Figma"} w1={"60%"} l2={"Sketch"} w2={"40%"} l3={"Blender"} w3={"45%"} l4={"GIMP"} w4={"75%"} />
         </div>
       </div>
       <ParallaxProvider>
