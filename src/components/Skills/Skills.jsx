@@ -8,20 +8,16 @@ const Skills = () => {
     <div className="skills" id="Skills">
       <div className="s-info">
         <div className="s-head">
-          <p>My <span style={{ color: "#F5C32C", marginTop: "0.5rem" }}>SkillSet</span> </p>
+          <p>
+            My <span style={{ color: "#F5C32C", marginTop: "0.5rem" }}>SkillSet</span>{" "}
+          </p>
         </div>
         <p className="s-body">Here are some languages and tools I tried. I mainly use Figma and GIMP for designing purposes</p>
       </div>
       <div className="s-card">
-        <div className="card1">
-          <Cards header={"Frontend Developer"} l1={"HTML"} w1={"80%"} l2={"CSS"} w2={"70%"} l3={"Javascript"} w3={"65%"} l4={"React"} w4={"60%"} />
-        </div>
-        <div className="card2">
-          <Cards header={"Backend Developer"} l1={"PHP"} w1={"70%"} l2={"NodeJS"} w2={"55%"} l3={"Firebase"} w3={"40%"} l4={"Python"} w4={"50%"} />
-        </div>
-        <div className="card3">
-          <Cards header={"Designer"} l1={"Figma"} w1={"60%"} l2={"Sketch"} w2={"40%"} l3={"Blender"} w3={"45%"} l4={"GIMP"} w4={"75%"} />
-        </div>
+        <Cards header={"Frontend Developer"} l1={"HTML"} w1={"80%"} l2={"CSS"} w2={"70%"} l3={"Javascript"} w3={"65%"} l4={"React"} w4={"60%"} />
+        <Cards header={"Backend Developer"} l1={"PHP"} w1={"70%"} l2={"NodeJS"} w2={"55%"} l3={"Firebase"} w3={"40%"} l4={"Python"} w4={"50%"} />
+        <Cards header={"Designer"} l1={"Figma"} w1={"60%"} l2={"Sketch"} w2={"40%"} l3={"Blender"} w3={"45%"} l4={"GIMP"} w4={"75%"} />
       </div>
       <ParallaxProvider>
         <Parallax speed={-30}>

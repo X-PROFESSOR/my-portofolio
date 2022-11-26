@@ -14,60 +14,102 @@ function S_Cards({ header, l1, w1, l2, w2, l3, w3, l4, w4 }) {
   }
 
   return (
-    <SBars ref={myRef}>
-      <CardHead>{header}</CardHead>
-      <Bar>
-        <Info>
-          <BarSpan>{l1}</BarSpan>
-        </Info>
-        <ProgressLine>
-          <ProgressSpan style={{ width: w1 }}>
-            <SpanSection>{w1}</SpanSection>
-          </ProgressSpan>
-        </ProgressLine>
-      </Bar>
-      <Bar>
-        <Info>
-          <BarSpan>{l2}</BarSpan>
-        </Info>
-        <ProgressLine>
-          <ProgressSpan style={{ width: w2 }}>
-            <SpanSection>{w2}</SpanSection>
-          </ProgressSpan>
-        </ProgressLine>
-      </Bar>
-      <Bar>
-        <Info>
-          <BarSpan>{l3}</BarSpan>
-        </Info>
-        <ProgressLine>
-          <ProgressSpan style={{ width: w3 }}>
-            <SpanSection>{w3}</SpanSection>
-          </ProgressSpan>
-        </ProgressLine>
-      </Bar>
-      <Bar>
-        <Info>
-          <BarSpan>{l4}</BarSpan>
-        </Info>
-        <ProgressLine>
-          <ProgressSpan style={{ width: w4 }}>
-            <SpanSection>{w4}</SpanSection>
-          </ProgressSpan>
-        </ProgressLine>
-      </Bar>
-    </SBars>
+    <SCards>
+      <SBars ref={myRef}>
+        <CardHead>{header}</CardHead>
+        <Bar>
+          <Info>
+            <BarSpan>{l1}</BarSpan>
+          </Info>
+          <ProgressLine>
+            <ProgressSpan style={{ width: w1 }}>
+              <SpanSection>{w1}</SpanSection>
+            </ProgressSpan>
+          </ProgressLine>
+        </Bar>
+        <Bar>
+          <Info>
+            <BarSpan>{l2}</BarSpan>
+          </Info>
+          <ProgressLine>
+            <ProgressSpan style={{ width: w2 }}>
+              <SpanSection>{w2}</SpanSection>
+            </ProgressSpan>
+          </ProgressLine>
+        </Bar>
+        <Bar>
+          <Info>
+            <BarSpan>{l3}</BarSpan>
+          </Info>
+          <ProgressLine>
+            <ProgressSpan style={{ width: w3 }}>
+              <SpanSection>{w3}</SpanSection>
+            </ProgressSpan>
+          </ProgressLine>
+        </Bar>
+        <Bar>
+          <Info>
+            <BarSpan>{l4}</BarSpan>
+          </Info>
+          <ProgressLine>
+            <ProgressSpan style={{ width: w4 }}>
+              <SpanSection>{w4}</SpanSection>
+            </ProgressSpan>
+          </ProgressLine>
+        </Bar>
+      </SBars>
+    </SCards>
   );
 }
 
-const SBars = styled.div`
-  padding: 25px 30px;
-  width: 17rem;
+const SCards = styled.div`
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  @media (max-width: 481px) {
-    width: 85%;
+  background: linear-gradient(50deg, rgb(19 23 32), rgb(16 21 32));
+  overflow: hidden;
+  height: 318px;
+  width: 332px;
+  display: grid;
+  place-items: center;
+  cursor: default;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 465px;
+    height: 35px;
+    top: -50px;
+    right: 100px;
+    background: linear-gradient(50deg, var(--dorange), var(--orange));
+    transition: 1.9s;
+    transform: rotate(-45deg);
   }
+
+  &:hover::before {
+    top: 335px;
+    right: -230px;
+  }
+
+  @media (max-width: 481px) {
+    position: relative;
+    &:before {
+      top: -50px;
+      right: 130px;
+      width: 550px;
+    }
+  }
+`;
+
+const SBars = styled.div`
+  height: 310px;
+  width: 324px;
+  border-radius: 10px;
+  background: var(--dgray);
+  z-index: 1;
+
+  @media (max-width: 481px) {
+    width: 98%;
+  }
+
   @keyframes animate {
     100% {
       transform: scaleX(1);
@@ -90,10 +132,11 @@ const SBars = styled.div`
 const CardHead = styled.p`
   text-align: center;
   font-size: 1.4rem;
+  padding: 22px 0 12px;
 `;
 
 const Bar = styled.div`
-  margin: 20px 0;
+  padding: 10px 25px;
 `;
 
 const Info = styled.div`

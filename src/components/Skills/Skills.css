@@ -31,21 +31,19 @@
 
 .s-card>* {
     position: absolute;
-    background-color: var(--dgray);
-    border-radius: 10px;
 }
 
-.s-card>.card1 {
+.s-card>:nth-child(1) {
     left: 56%;
     top: 0rem;
 }
 
-.s-card>.card2 {
+.s-card>:nth-child(2) {
     right: 53%;
     top: 25%;
 }
 
-.s-card>.card3 {
+.s-card>:nth-child(3) {
     left: 52%;
     top: 49%;
 }
@@ -126,7 +124,7 @@
         display: block;
         padding: 0;
         height: 82rem;
-        margin: 8rem 0 0rem;
+        margin: 10rem 0 0rem;
     }
 
     .s-info {
@@ -146,10 +144,13 @@
         gap: 2rem;
         height: 85%;
     }
-
-    .s-card>* {
-        position: static;
-        width: 100%;
+    .s-card>:nth-child(1),
+    .s-card>:nth-child(2),
+    .s-card>:nth-child(3) {
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 98%;
     }
 
     .s-innerWordCloud {
