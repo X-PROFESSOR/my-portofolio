@@ -77,7 +77,7 @@ const SCards = styled.div`
     position: absolute;
     width: 465px;
     height: 35px;
-    top: -50px;
+    top: -40px;
     right: 100px;
     background: linear-gradient(50deg, var(--dorange), var(--orange));
     transition: 1.9s;
@@ -86,13 +86,13 @@ const SCards = styled.div`
 
   &:hover::before {
     top: 335px;
-    right: -230px;
+    right: -260px;
   }
 
   @media (max-width: 481px) {
     position: relative;
     &:before {
-      top: -50px;
+      top: -60px;
       right: 130px;
       width: 550px;
     }

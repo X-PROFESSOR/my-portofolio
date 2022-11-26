@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     height: 28rem;
-    padding: 8rem 8rem 0;
+    padding: 8rem 8rem 2rem;
 }
 
 .c-text {
